@@ -67,7 +67,7 @@ It includes income, credit score, payment history, open lines of credit, and edu
 
 ### Data Dictionary
 A complete data dictionary — including variable definitions, scales, ranges, and data quality notes — is available below:
-[Open Data Dictionary](data/CREDIT_RISK_DATA_DICTIONARY.md)
+![ROC Curve LDA vs QDA](visualizations/roc_curve_lda_vs_qda.png)
 
 ---
 
