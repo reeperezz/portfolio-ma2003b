@@ -1,6 +1,6 @@
 # Customer Satisfaction Analysis — README
 
-## Contexto del negocio (Business Context)
+## (Business Context)
 
 **Client & problem description:**
 
@@ -10,7 +10,7 @@ The client is a B2B services firm measuring customer perceptions and commercial 
 
 Understanding latent drivers of customer satisfaction enables prioritized investments (support, delivery, product improvements, pricing transparency) to reduce churn, increase renewals and grow revenue with measurable ROI.
 
-## Metodología (Methodology)
+## (Methodology)
 
 **Multivariate method applied:**
 
@@ -26,7 +26,7 @@ Understanding latent drivers of customer satisfaction enables prioritized invest
 - Visualization: `matplotlib`, `seaborn`, `plotly`
 - Execution: `Jupyter` notebook (`costomer_satisfaction.ipynb`)
 
-## Datos (Data)
+## (Data)
 
 **Dataset description:**
 
@@ -42,7 +42,7 @@ Understanding latent drivers of customer satisfaction enables prioritized invest
 
 - There is no separate data-dictionary file in the repo. Column names and basic descriptions are available in the header of `customer_satisfaction_data.csv` and in the explanatory cells of `costomer_satisfaction.ipynb`. If you want, I can auto-generate a `DATA_DICTIONARY.md` from the CSV header and add it to the repository.
 
-## Hallazgos principales (Main Findings)
+## (Main Findings)
 
 - The dataset is highly suitable for factor analysis: **Kaiser-Meyer-Olkin (KMO) = 0.959** and Bartlett’s test is significant (p < 0.05), supporting factorability.
 - A 5-factor solution was retained. The five factors together explain **61.85%** of total variance; **Factor 1 alone explains ≈ 38.0%**.
@@ -56,20 +56,20 @@ Understanding latent drivers of customer satisfaction enables prioritized invest
 
 > Replace these numbers with alternative model runs if you perform cross-validation or alternative model specifications.
 
-## Visualización destacada (Featured visualization)
+## (Featured visualization)
 
 ![Relative importance of factors](visualizations/relative_importance_of_factors.png)
 
 Figure: Relative importance / R² contribution of each factor when predicting customer satisfaction (see `visualizations/` for full set of plots: `scree_plot.png`, `factor_loadings_heatmap.png`, etc.).
 
-## Métricas de performance del modelo (Model performance metrics)
+## (Model performance metrics)
 
 - Example predictive performance reported in the notebook when modelling `overall_satisfaction` with factor scores:
   - R² (example fit): ≈ **0.64**
   - RMSE: models in the notebook reported RMSE generally **below 0.55**
   - The notebook includes a `predictive_results` DataFrame with per-outcome coefficient and performance rows; consider exporting it to CSV for stakeholder review.
 
-## Recomendaciones de negocio (Business recommendations)
+## (Business recommendations)
 
 1. Strengthen Technical Excellence & Innovation (Factor 1): invest in technical training, code/release quality checks, and richer technical documentation — expected impact: increase `overall_satisfaction`, renewal likelihood, and revenue growth.
 2. Improve Project Delivery (Factor 4): standardize delivery processes (Agile/PMO), track timeline and budget KPIs, and fix billing accuracy issues for mid-sized accounts — expected impact: reduce complaints, improve renewals.
@@ -77,18 +77,14 @@ Figure: Relative importance / R² contribution of each factor when predicting cu
 
 For each recommendation, run a small pilot (A/B test or targeted segment rollout) and track `overall_satisfaction`, `renewal_likelihood`, and revenue metrics before scaling.
 
-## Impact esperado (Expected impact)
+## (Expected impact)
 
 - Short term (1–3 months): operational fixes (billing, SLA clarifications) should reduce complaint volume and raise satisfaction scores modestly.
 - Medium term (3–9 months): investments in technical capability and delivery process should materially increase satisfaction and renewal rates.
 - Long term (>9 months): improved value communication and product enhancements should drive referral growth and sustainable revenue increases.
 
-## Próximos pasos (Next steps)
+## (Next steps)
 
 1. Export the notebook's `predictive_results` to `artifacts/predictive_results.csv` and attach a coefficients table for each outcome to the README (I can do this for you).
 2. Add a formal `DATA_DICTIONARY.md` generated from `customer_satisfaction_data.csv` (optional but recommended).
 3. Design 2 pilot interventions (one operational, one technical) with clear success metrics and a 3-month timeline.
-
----
-
-If you want, I will now: (A) extract and export the notebook's `predictive_results` and append a coefficients table to this README, and/or (B) create a `DATA_DICTIONARY.md` from the CSV header. Tell me which one to run next.
