@@ -85,7 +85,7 @@ A complete data dictionary — including variable definitions, scales, ranges, a
 ### Featured Visualization
 To be included in the repository:
 
-```md
+
 ![ROC Curve LDA vs QDA](visualizations/roc_curve_lda_vs_qda.png)
 
 ## Model Performance Metrics
